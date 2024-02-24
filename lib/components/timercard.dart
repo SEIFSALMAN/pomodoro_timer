@@ -37,7 +37,7 @@ class TimerCard extends StatelessWidget {
                   ]),
               child: Center(
                 child: Text((provider.currentDuration ~/ 60).toString(),
-                    style: textStyle(65,renderTextColor(provider.currentState), FontWeight.bold)),
+                    style: textStyle(60,renderTextColor(provider.currentState), FontWeight.bold)),
               ),
             ),
             SizedBox(
@@ -68,7 +68,7 @@ class TimerCard extends StatelessWidget {
                     seconds == 0
                         ? "${seconds.round()}0"
                         : (provider.currentDuration % 60).round().toString(),
-                    style: textStyle(65, renderTextColor(provider.currentState), FontWeight.bold)),
+                    style: textStyle(60, renderTextColor(provider.currentState), FontWeight.bold)),
               ),
             ),
           ],

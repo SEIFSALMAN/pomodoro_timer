@@ -51,7 +51,7 @@ class LandscapeProgressIndicator extends StatelessWidget {
         Row(
           children: [
             Text("ROUND",style: textStyle(25,Colors.white,FontWeight.bold),),
-            SizedBox(width: MediaQuery.of(context).size.width * 0.058,),
+            SizedBox(width: MediaQuery.of(context).size.width * 0.078,),
             Text("GOAL",style: textStyle(25,Colors.white,FontWeight.bold),)
           ],
         ),

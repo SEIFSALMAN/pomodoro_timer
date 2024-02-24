@@ -55,7 +55,7 @@ class TimeOptions extends StatelessWidget {
               child: Center(
                   child: Text(
                 (int.parse(time) ~/ 60).toString(),
-                style: textStyle(25,int.parse(time) == provider.selectedTime ? renderTextColor(provider.currentState) : Colors.white, FontWeight.w700),
+                style: textStyle(20,int.parse(time) == provider.selectedTime ? renderTextColor(provider.currentState) : Colors.white, FontWeight.w700),
               )),
             ),
           );
@@ -116,7 +116,7 @@ class LandscapeTimeOptions extends StatelessWidget {
               child: Center(
                   child: Text(
                 (int.parse(time) ~/ 60).toString(),
-                style: textStyle(25,int.parse(time) == provider.selectedTime ? renderTextColor(provider.currentState) : Colors.white, FontWeight.w700),
+                style: textStyle(20,int.parse(time) == provider.selectedTime ? renderTextColor(provider.currentState) : Colors.white, FontWeight.w700),
               )),
             ),
           );

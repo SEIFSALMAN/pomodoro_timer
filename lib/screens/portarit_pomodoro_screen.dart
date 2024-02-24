@@ -24,17 +24,7 @@ class PomodoroTimerScreen extends StatelessWidget {
           "TOMATOTREK",
           style: textStyle(23, Colors.white, FontWeight.w700),
         ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                AppNavigator.customNavigator(context: context, screen: const SettingsScreen(), finish: false);
-              },
-              icon: Icon(
-                Icons.settings,
-                color: Colors.white,
-                size: 30,
-              ))
-        ],
+
       ),
       body: SingleChildScrollView(
         child: Container(
