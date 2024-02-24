@@ -136,7 +136,7 @@ class LandscapeTimerCard extends StatelessWidget {
                     seconds == 0
                         ? "${seconds.round()}0"
                         : (provider.currentDuration % 60).round().toString(),
-                    style: textStyle(65, renderTextColor(provider.currentState), FontWeight.bold)),
+                    style: textStyle(50, renderTextColor(provider.currentState), FontWeight.bold)),
               ),
             ),
           ],

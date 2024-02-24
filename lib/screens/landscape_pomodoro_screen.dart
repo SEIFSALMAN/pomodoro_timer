@@ -59,13 +59,17 @@ class TomatoTrekScreen extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 5,
-                ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: [LandscapeTimerCard(), SizedBox(width: 20), LandscapeTimeController()],
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    LandscapeTimerCard(),
+                    SizedBox(width: 20),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10.0, right: 10),
+                      child: LandscapeTimeController(),
+                    )
+                  ],
                 ),
                 SizedBox(
                   height: 30,

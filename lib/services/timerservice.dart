@@ -28,7 +28,7 @@ class TimerService extends ChangeNotifier {
     clockAudioPlayer.pause();
     timer!.cancel();
     currentState = "FOCUS";
-    currentDuration = selectedTime = 600;
+    currentDuration = selectedTime = 1200;
     rounds = goals = 0;
     timerPlaying = false;
     notifyListeners();
@@ -42,7 +42,7 @@ class TimerService extends ChangeNotifier {
   }
 
   void startTimer() {
-    clockAudioPlayer.open(Audio('assets/clockTrim.mp3'),
+    clockAudioPlayer.open(Audio('assets/clock.mp3'),
         autoStart: false,
         loopMode: LoopMode.playlist,
         playInBackground: PlayInBackground.disabledRestoreOnForeground,

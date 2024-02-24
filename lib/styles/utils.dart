@@ -14,8 +14,11 @@ Color renderScreenColor(String currentState){
   if(currentState == "FOCUS"){
     return Colors.redAccent;
   }
-  else {
+  else if(currentState == "BREAK"){
     return Colors.lightBlueAccent;
+  }
+  else {
+    return Colors.green;
   }
 }
 
@@ -23,7 +26,10 @@ Color renderTextColor(String currentState){
   if(currentState == "FOCUS"){
     return Colors.redAccent;
   }
-  else {
+  else if(currentState == "BREAK"){
     return Colors.lightBlueAccent;
+  }
+  else {
+    return Colors.green;
   }
 }

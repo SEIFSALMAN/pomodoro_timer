@@ -42,11 +42,6 @@ class _MyAppState extends State<MyApp> {
         ),
       ],
       child: MaterialApp(
-        // themeMode: Provider.of<AppMode>(context).isDarkMode!
-        //     ? ThemeMode.dark
-        //     : ThemeMode.light,
-        // theme: lightTheme,
-        // darkTheme: darkTheme,
         debugShowCheckedModeBanner: false,
         home: OrientationBuilder(
           builder: (context, orientation) {
